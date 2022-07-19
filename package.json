@@ -1,0 +1,28 @@
+{
+  "name": "org.apache.cordova.myapp",
+  "displayName": "myApp",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "init": "npx rimraf ./plugins && npx rimraf ./platforms && npx cordova prepare electron"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova": "^11.0.0",
+    "cordova-electron": "^3.1.0",
+    "cordova-plugin-device": "^2.1.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-device": {}
+    },
+    "platforms": [
+      "electron"
+    ]
+  }
+}
